@@ -1,0 +1,49 @@
+h1 {
+  color: gray;
+  font-size: 9rem;
+  font-weight: bolder;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.global-container {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+.list-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80vw;
+}
+
+.cards {
+  margin-top: 15px;
+  width: 420px;
+  height: 100px;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 5;
+}

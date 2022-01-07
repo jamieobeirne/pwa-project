@@ -1,0 +1,30 @@
+<mat-spinner
+class="spinner-position"
+[mode]="'indeterminate'"
+*ngIf="loading">
+</mat-spinner>
+
+<div class="global-container">
+
+  <h1>Wanted!</h1>
+
+  <ul class="list-group">
+    <mat-card  *ngFor="let user of user.data" class="cards" >
+      <a
+      class= "list-group-item list-group-item-action animate_animated
+      animate_bounce animate_fadeIn"
+      [routerLink]= "['/user', user.id]">
+      {{user.id}}. {{user.first_name}} {{user.last_name}}
+      </a>
+    </mat-card>
+  </ul>
+
+</div>
+
+
+
+
+
+
+
+

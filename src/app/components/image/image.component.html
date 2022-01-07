@@ -1,0 +1,51 @@
+
+
+
+<div class="global-container">
+  <h1>Wanted!</h1>
+
+  <mat-card class="cards">
+    <p>Name:  {{user.first_name}} {{user.last_name}}</p>
+    <p>Mug Shot: </p>
+    <img style="width: 30%; height: auto;" class="rounded"
+    src={{user.avatar}} alt="Image from database">
+  </mat-card>
+
+  <div class="back-button">
+    <a class="btn btn-dark" routerLink="/">Back</a>
+  </div>
+
+ <!--
+  <button class="btn btn-dark show-button" (click) = toggleDisplay()>Show all details</button>
+    <div class="extra-details" *ngIf="show">
+    <div >
+      <p>1. Id number:  {{user.id}}</p>
+      <p>2. First name:  {{user.first_name}}</p>
+      <p>3. Last name:  {{user.last_name}}</p>
+      <p>4. Url: <a href="user.avatar">{{user.avatar}}</a></p>
+      <p>5. Zoomed Mug shot: </p>
+      <img style="width: 60%; height: auto;" class="rounded"
+      src={{user.avatar}} alt="Image from database">
+    </div>
+    <button class="btn btn-dark hide-button" (click) = toggleDisplay()>Hide</button>
+  </div>
+  -->
+
+  <mat-accordion>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Click here to show all details
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>1. Id number:  {{user.id}}</p>
+      <p>2. First name:  {{user.first_name}}</p>
+      <p>3. Last name:  {{user.last_name}}</p>
+      <p>4. Url: <a href="user.avatar">{{user.avatar}}</a></p>
+      <p>5. Zoomed Mug shot: </p>
+      <img style="width: 50%; height: auto;" class="rounded"
+      src={{user.avatar}} alt="Image from database">
+    </mat-expansion-panel>
+
+  </mat-accordion>
+</div>
